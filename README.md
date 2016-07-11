@@ -28,11 +28,11 @@ It uses .Net 4.5.
 
 public async void CallDSProcessing()
   {
-    string uriOfDataService="http://services.odata.org/Northwind/Northwind.svc/$metadata" //notice the $metadata query parameter
-    string exportDirectory=@"c:\temp\DS2POCO\";
-    string namespace="MyProject.Model";
-    string baseClassName="AbstractModel";
-    string usingNamespaces="System.IO";
+    string uriOfDataService = "http://services.odata.org/Northwind/Northwind.svc/$metadata" //notice the $metadata query parameter
+    string exportDirectory = @"c:\temp\DS2POCO\";
+    string namespace = "MyProject.Model";
+    string baseClassName = "AbstractModel";
+    string usingNamespaces = "System.IO";
     if (!string.IsNullOrEmpty(uriOfDataService) && !string.IsNullOrEmpty(exportDirectory))
       await DS2POCO.DS2POCOProcessor.Processing(uriOfDataService, exportDirectory, namespace, baseClassName, usingNamespaces, 
         (str) => Dispatcher.Invoke(() => results.Text += str + Environment.NewLine));
