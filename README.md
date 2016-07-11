@@ -10,6 +10,7 @@ It uses .Net 4.5.
 * Download the project and compile it
   * It will download packages according to the `packages.config` file
 * Add the project (or the compiled dll) to your referencing project
+  * The referencing project also needs to have the Microsoft.CodeAnalysis package!  
 * Call the `Processing` function with the required parameters
 
 ## Example
