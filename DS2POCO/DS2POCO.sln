@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DS2POCOGUI", "DS2POCOGUI\DS2POCOGUI.csproj", "{628359B1-3BAC-412C-A628-4342B8C983CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DS2POCO", "DS2POCO\DS2POCO.csproj", "{7E211DE5-8D19-4973-8D57-6B32660A75E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DS2POCOConsole", "DS2POCOConsole\DS2POCOConsole.csproj", "{0206FD8B-31B9-4F9E-A590-ABC2A69DCE9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{628359B1-3BAC-412C-A628-4342B8C983CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{628359B1-3BAC-412C-A628-4342B8C983CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{628359B1-3BAC-412C-A628-4342B8C983CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{628359B1-3BAC-412C-A628-4342B8C983CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E211DE5-8D19-4973-8D57-6B32660A75E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E211DE5-8D19-4973-8D57-6B32660A75E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E211DE5-8D19-4973-8D57-6B32660A75E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E211DE5-8D19-4973-8D57-6B32660A75E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0206FD8B-31B9-4F9E-A590-ABC2A69DCE9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0206FD8B-31B9-4F9E-A590-ABC2A69DCE9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0206FD8B-31B9-4F9E-A590-ABC2A69DCE9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0206FD8B-31B9-4F9E-A590-ABC2A69DCE9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
