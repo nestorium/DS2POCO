@@ -8,18 +8,18 @@ It uses .Net 4.5.
 ## Steps
 
 * Download the project and compile it
-  * It may download packages according to the `packages.json` file
+  * It will download packages according to the `packages.config` file
 * Add the project (or the compiled dll) to your referencing project
 * Call the `Processing` function with the required parameters
 
 ## Example
 ### Parameters
-* **uri**: URI of DataService metadata. (required)
-* **exportDirectory**: Directory for the output files. (required)
+* **uri**: URI of DataService metadata (required).
+* **exportDirectory**: Directory for the output files (required).
 * **primaryNamespace**: Basic namespace (default value: Proxy).
 * **baseClassName**: Base class name (optional).
 * **usingNamespaces**: Using namespaces (optional).
-* **callback**: Callback delegate (optional)
+* **callback**: Callback delegate (optional).
    
 
 ```csharp
