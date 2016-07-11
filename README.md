@@ -24,16 +24,20 @@ It uses .Net 4.5.
    
 
 ```csharp
-string uriOfDataService="http://services.odata.org/Northwind/Northwind.svc/$metadata" //notice the $metadata query parameter
+
 
 public async void CallDSProcessing()
   {
-      if (!string.IsNullOrEmpty(url.Text) && !string.IsNullOrEmpty(exportDirectory.Text))
-          await DS2POCO.DS2POCOProcessor.Processing(url.Text, exportDirectory.Text, 
-            namespace.Text, baseClassName.Text, usingNamespaces.Text, 
-            (str) => Dispatcher.Invoke(() => results.Text += str + Environment.NewLine));
-      else
-          results.Text += "Required fields are missing" + Environment.NewLine;
+    string uriOfDataService="http://services.odata.org/Northwind/Northwind.svc/$metadata" //notice the $metadata query parameter
+    string exportDirectory=@"c:\temp\DS2POCO\";
+    string namespace="MyProject.Model";
+    string baseClassName="AbstractModel";
+    string usingNamespaces="System.IO";
+    if (!string.IsNullOrEmpty(uriOfDataService) && !string.IsNullOrEmpty(exportDirectory))
+      await DS2POCO.DS2POCOProcessor.Processing(uriOfDataService, exportDirectory, namespace, baseClassName, usingNamespaces, 
+        (str) => Dispatcher.Invoke(() => results.Text += str + Environment.NewLine));
+    else
+      results.Text += "Required fields are missing" + Environment.NewLine;
   }
   ```
 
